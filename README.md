@@ -37,6 +37,7 @@ java -version
 
 ![Java Installation](screenshots/pre-requisite_for_jenkins_3.png)
 
+
 ## Jenkins Installation
 
 After installing and verifying Java 17, Jenkins was installed on the Ubuntu EC2 instance.
@@ -55,7 +56,8 @@ The Jenkins dashboard was available, confirming that the Jenkins server was runn
 
 ![Jenkins Ready](screenshots/Jenkins_ready_5.png)
 
-## 🐳 Docker Installation
+
+## Docker Installation
 
 After setting up Jenkins, Docker was installed on the Ubuntu EC2 instance to provide the container environment required for the Jenkins pipeline.
 
@@ -72,7 +74,8 @@ docker --version
 
 Docker was successfully installed and configured on the EC2 instance for use with Jenkins.
 
-## 🔌 Docker Pipeline Plugin
+
+## Docker Pipeline Plugin
 
 After installing Docker on the EC2 instance, the **Docker Pipeline** plugin was installed in Jenkins.
 
@@ -84,6 +87,7 @@ The plugin was installed from:
 
 After installation, Jenkins was ready to use Docker as the execution environment for the pipeline.
 
+
 ## Jenkins Pipeline Execution
 
 After installing Docker and the Docker Pipeline plugin, the Jenkins pipeline was configured using the `Jenkinsfile` from the GitHub repository.
@@ -93,6 +97,7 @@ The pipeline was triggered from Jenkins, and the defined stages were executed au
 The pipeline uses Docker as the execution environment for running the build stages.
 
 ![Jenkins Pipeline Execution](screenshots/final-1_pipeline.png)
+
 
 ## Docker Agent Execution
 
@@ -104,6 +109,7 @@ This demonstrates how Jenkins can use a Docker container as an isolated executio
 
 ![Docker Agent Execution](screenshots/final-2_pipeline.png)
 
+
 ## Build Verification
 
 After the pipeline execution was completed, the build was successfully verified.
@@ -113,3 +119,45 @@ The Jenkins console output confirmed that the Docker-based pipeline executed suc
 This confirms that Jenkins was able to execute the CI pipeline using the configured Docker agent.
 
 ![Build Verification](screenshots/final_3-pipeline.png)
+
+
+## Project Overview
+
+This project demonstrates Continuous Integration using Jenkins, Docker, AWS EC2, and GitHub.
+
+Jenkins is hosted on an AWS EC2 instance and uses a Docker container as the execution environment for running the CI pipeline.
+
+The project demonstrates Docker-based Jenkins agent execution and isolated pipeline execution.
+
+## Technologies Used
+
+- AWS EC2
+- Jenkins
+- Docker
+- GitHub
+- Java 17
+- Jenkinsfile
+- Ubuntu 22.04
+
+## Project Structure
+
+```text
+CodeAlpha_JenkinsRemoting/
+├── Jenkinsfile
+├── README.md
+└── screenshots/
+    ├── Creating_Instance_1.png
+    ├── Connecting_to_EC2_2.png
+    ├── pre-requisite_for_jenkins_3.png
+    ├── jenkins_install_4.png
+    ├── Jenkins_ready_5.png
+    ├── final-1_pipeline.png
+    ├── final-2_pipeline.png
+    └── final_3-pipeline.png
+```
+
+## Conclusion
+
+This project provided hands-on experience with Jenkins Continuous Integration, Docker-based agent execution, and remote build execution in an AWS EC2 environment.
+
+The pipeline was successfully executed using a Docker container, demonstrating an isolated and automated CI workflow.
