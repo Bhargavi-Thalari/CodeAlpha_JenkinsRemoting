@@ -143,17 +143,17 @@ The project demonstrates Docker-based Jenkins agent execution and isolated pipel
 
 ```text
 CodeAlpha_JenkinsRemoting/
-├── Jenkinsfile
-├── README.md
-└── screenshots/
-    ├── Creating_Instance_1.png
-    ├── Connecting_to_EC2_2.png
-    ├── pre-requisite_for_jenkins_3.png
-    ├── jenkins_install_4.png
-    ├── Jenkins_ready_5.png
-    ├── final-1_pipeline.png
-    ├── final-2_pipeline.png
-    └── final_3-pipeline.png
+--Jenkinsfile
+-- README.md
+   ---screenshots/
+      --Creating_Instance_1
+      --Connecting_to_EC2_2
+      --pre-requisite_for_jenkins_3
+      --jenkins_install_4.png
+      --Jenkins_ready_5
+      --final-1_pipeline
+      --final-2_pipeline
+      --final_3-pipeline
 ```
 
 ## Conclusion
