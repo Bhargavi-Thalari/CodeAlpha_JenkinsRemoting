@@ -21,7 +21,7 @@ pipeline {
 
                     echo ""
                     echo "Current user:"
-                    whoami
+                    id
 
                     echo ""
                     echo "Operating System:"
